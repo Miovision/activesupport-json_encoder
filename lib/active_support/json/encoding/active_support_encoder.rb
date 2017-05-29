@@ -143,7 +143,7 @@ class BigDecimal
 
   def as_json(options = nil) #:nodoc:
     if finite?
-      self
+      self.to_f
     else
       nil
     end
